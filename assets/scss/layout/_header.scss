@@ -1,4 +1,30 @@
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+	background: #AA0601;
+	color: white;
+	padding: 16px 0;
+}
+.logo{
+	width: 80px;
+	height: 48.5px;
+}
+
+li{
+	display: block;
+}
+.nav{
+	margin-right: 64px;
+}
+.nav:hover{
+	font-weight: 700;
+	color: #650300;
+}
+.nav-qust:hover{
+	font-weight: 700;
+	color: #650300;
 }

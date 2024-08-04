@@ -1,4 +1,43 @@
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 12px;
+}
+
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: #aa0601;
+  padding-top: 48px;
+  color: white;
+}
+.footer img{
+  width: 48px;
+}
+a:hover{
+  font-weight: 700;
+}
+.footer-nav-menu{
+  gap: 48px;
+}
+.footer-social{
+  gap: 36px;
+}
+.display-none{
+  display: none;
+}
+.contact{
+  margin-bottom: 36px;
+}
+.footer-contact{
+  font-size: 36px;
+}
+span{
+  margin-right: 20px;
+}
+
+.footer-copyright{
+  padding: 32px 0;
+  border-top: 1px solid #fff;
+}
+.footer-copyright ul{
+  gap: 16px;
 }
