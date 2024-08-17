@@ -1,17 +1,14 @@
-.container{
-	max-width: 1320px;
-	margin: 0 auto;
-	padding: 0 12px;
-}
+
 
 .header{
 	background: #AA0601;
 	color: white;
-	padding: 16px 0;
-}
+	padding: 16px 0;	
+	}
+
 .logo{
 	width: 80px;
-	height: 48.5px;
+	height: 48px;
 }
 
 li{
@@ -27,4 +24,47 @@ li{
 .nav-qust:hover{
 	font-weight: 700;
 	color: #650300;
+}
+
+@include mobile{
+	
+	.header{
+		padding: 0;
+		padding-top: 16px;
+	}
+	.flex-wrap{
+		flex-wrap: wrap;
+	}
+	.logo{
+		margin-bottom: 16px;
+	}
+	.header ul{
+		flex-wrap: wrap;
+		margin-right: -12px;
+		margin-left: -12px;
+	}
+	.header li{
+		border-top: 1px solid white;
+		border-right: 1px solid white;
+		padding: 12px 62px;
+		text-align: center;
+	}
+	.nav{
+		margin-right: 0px;
+		width: 50%;
+	}
+	.nav-right{
+		margin-right: 0px;
+		width: 50%;
+	}
+	.nav:hover{
+		font-weight: 700;
+		color: #650300;
+		background-color: antiquewhite;
+	}
+	.nav-qust:hover{
+		font-weight: 700;
+		color: #650300;
+		background-color: antiquewhite;
+	}
 }

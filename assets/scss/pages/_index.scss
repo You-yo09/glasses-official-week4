@@ -1,59 +1,93 @@
 
 /*banner*/
 .banner{
-	color: #650300;
+	color: $secondary;
 	height: calc(100vh - 80.5px);
 	background-image: url(/assets/images/home-header.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-}
-.banner-style{
+	@include pad{
+		background-image: url(/assets/images/home-header-sm.png);
+	}
+    &-style {
 	height: 100%;
 	flex-direction: column;
 	justify-content: center;
-	
+	}
+	&-title {
+		text-align: end;
+	}
+	&-button{
+		background-color: $primary;
+		color: white;
+		padding: 6px 12px;
+		cursor: pointer
+	}
+	&-button:hover{
+		background-color: $bg-light;
+		color: $primary;
+	}
 }
-.banner-title{
-	text-align: end;
-}
-.banner-button{
-	background-color: #AA0601;
-	color: white;
-	padding: 6px 12px;
-	cursor: pointer
-}
-.banner-button:hover{
-	background-color: antiquewhite;
-	color: #AA0601;
-}
+  @include mobile{
+	.h1{
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.h3{
+		font-size: 16px;
+	}
+	.banner{
+		height: 396px;
+	}
+  }
+
 
 /*about*/
 .about{
-	background: #FBF2F2;
+	background: $bg-light;
 	padding-bottom: 80px;
+
+	&-title{
+		font-weight: bold;
+		text-align: center;
+		padding-top: 80px;
+		margin-bottom: 24px;
+	}
+
+	&-list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-left: -12px;
+		margin-right: -12px;
+	}
 }
-.about-title{
-	font-weight: bold;
-	text-align: center;
-	padding-top: 80px;
-	margin-bottom: 24px;
+.about-card{
+		width: calc(25% - 18px);
+		padding-bottom: 80px;
+		padding: 0 12px;
+		
+		@include pad{
+			width: calc(50% - 12px);
+		}
+		@include mobile{
+			width: 100%;
+		}
 }
-.about-list{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-left: -12px;
-	margin-right: -12px;
+.about-card img{
+	width: 83px;
 }
 
-.about-card{
-	width: calc(25% - 18px);
-	padding-bottom: 80px;
-	padding: 0 12px;
+@include pad{
+	.h2{
+		font-size: 48px;
+	}
 }
-.card-list img{
-	width: 83px;
+	@include mobile{
+		.h2{
+			font-size: 24px;
+		}
 }
 
 /*series*/

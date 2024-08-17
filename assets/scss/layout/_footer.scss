@@ -1,17 +1,24 @@
-.container{
-	max-width: 1320px;
-	margin: 0 auto;
-	padding: 0 12px;
-}
+
 
 .footer{
   background-color: #aa0601;
   padding-top: 48px;
   color: white;
+  @include mobile-larger{
+    padding-top: 24px;
+  }
 }
 .footer img{
   width: 48px;
+  @include mobile-larger{
+    width: 24px;
+  }
 }
+  @include mobile-larger{
+    .footer-nav{
+      display: none;
+    }
+  }
 a:hover{
   font-weight: 700;
 }
@@ -20,24 +27,66 @@ a:hover{
 }
 .footer-social{
   gap: 36px;
+  @include mobile-larger{
+    display: flex;
+        gap: 8px;
+  }
 }
 .display-none{
   display: none;
 }
 .contact{
   margin-bottom: 36px;
+  @include mobile-larger{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .footer-contact{
   font-size: 36px;
 }
 span{
   margin-right: 20px;
+  @include mobile-larger{
+    font-size: 16px;
+        margin-right: 10px;
+  }
 }
+ 
+ @include mobile-larger{
+  a{
+    font-size: 16px;
+  }
+ }
+  @include mobile-larger{
+    .footer-contact-social {
+      display: flex;
+      gap: 8px;
+    }
+  }
 
 .footer-copyright{
   padding: 32px 0;
   border-top: 1px solid #fff;
+  @include mobile-larger{
+    padding-top: 24px;
+      padding-bottom: 16px;
+      flex-direction: column;
+  }
+  p{
+    margin-bottom: 8px;
+  }
 }
 .footer-copyright ul{
   gap: 16px;
+  @include mobile-larger{
+    flex-direction: column;
+        gap: 0px;
+  }
 }
+ @include mobile-larger{
+  .sm-mb-8{
+    margin-bottom: 8px;
+  }
+ }
