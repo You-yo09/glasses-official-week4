@@ -1,4 +1,15 @@
 
+@include pad{
+	.container{
+		max-width: 720px;
+	}
+}
+@media mobile{
+	.container{
+		max-width: 372px;
+	}
+}
+
 /*banner*/
 .banner{
 	color: $secondary;
@@ -67,7 +78,7 @@
 		width: calc(25% - 18px);
 		padding-bottom: 80px;
 		padding: 0 12px;
-		
+
 		@include pad{
 			width: calc(50% - 12px);
 		}
@@ -100,16 +111,26 @@
 .series-list{
 	flex-wrap: wrap;
 	justify-content: space-between;
+	@include pad{
+		justify-content: center;
+		align-items: center;
+	}
 }
 .series-card{
 	width: calc(33.333% - 24px);
 	text-align: center;
+	@include pad{
+		width: 70%;
+	}
+	@include mobile{
+		width: 332px;
+	}
 }
 .series-card img:hover{
 	box-shadow: 0px 2px 6px rgba(0,0,.8,.8);
 }
 .series-card-title{
-	color: #AA0601;
+	color: $primary;
 	font-size: 48px;
 	font-weight: bold;
 	font-style: italic;
@@ -130,9 +151,13 @@
 	text-align: center;
 	padding-top: 80px;
 	padding-bottom: 48px;
+	@include mobile{
+		padding-top: 40px;
+		padding-bottom: 24px;
+	}
 }
 .join-design-card-title{
-	color: #AA0601;
+	color: $primary;
 	font-size: 48px;
 	font-weight: bold;
 	font-style: italic;
@@ -144,34 +169,72 @@
 .join-design-card-title:hover{
 	color: antiquewhite;
 }
+
+@include pad{
+	.flex-wrap{
+		flex-wrap: wrap;
+	}
+	.join-design-card{
+		width: 100%;
+	}
+}
 .join-design-bot-1{
 	padding-bottom: 80px;
+	@include pad{
+		padding-bottom: 24px;
+	}
 }
 .join-design-bot-2{
 	padding-bottom: 80px;
+	@include mobile{
+		padding-bottom: 40px;
+	}
 }
 
 /*recommend*/
 .recommend-title{
-	color: #650300;
+	color: $secondary;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 80px;
 	padding-bottom: 48px;
+	@include mobile{
+		padding-top: 40px;
+		padding-bottom: 24px;
+	}
 }
 .recommend-list{
 	flex-wrap: wrap;
 	margin-left: -12px;
 	margin-right: -12px;
 	margin-bottom: 80px;
+	@include mobile-larger{
+		padding: 0 12px;
+	}
+	@include mobile{
+		justify-content: center;
+		margin-bottom: 40px;
+	}
 }
 .recommend-card{
 	width: calc(25% - 18px);
 	box-shadow: 0px 2px 6px rgba(0,0,0,.16);
 	border-radius: 4px;
+	@include pad{
+		width: calc(50% - 12px);
+	}
+	@include mobile{
+		width: 100%;
+	}
 }
+@include pad{
+	.mb-24{
+		margin-bottom: 24px;
+	}
+}
+
 .recommend-card:hover {
-	background-color: #FBF2F2;
+	background-color: $bg-light;
 }
 .recommend-card-contant{
 	min-height: 205px;
@@ -189,18 +252,27 @@ time{
 
 /*connect*/
 .connect{
-	background-color: #FBF2F2;
+	background-color: $bg-light;
 }
 .connect-title{
-	color: #650300;
+	color: $secondary;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 80px;
 	padding-bottom: 48px;
+	@include mobile{
+		padding-top: 40px;
+		padding-bottom: 24px;
+	}
 }
 .w-50{
 	width: 50%;
 }
+ @include pad{
+	.w-100{
+		width: 100%;
+	}
+ }
 .connect p{
 	margin-bottom: 24px;
 }
@@ -222,14 +294,14 @@ time{
 	margin-bottom: 16px;
 	padding-left: 6px;
 	border: 1px solid gray;
-	background-color: #fbf2f2;
+	background-color: $bg-light;
 }
 .connect-opinion:hover{
 	background-color: white;
 }
 .connect-button{
 	width: 50%;
-	background: #aa0601;
+	background: $primary;
 	color: white;
 	margin: 0 auto;
 	border: none;
@@ -237,7 +309,15 @@ time{
 	padding: 16px 0;
 	margin-top: 48px;
 	margin-bottom: 80px;
+	@include mobile{
+		width: 100%;
+	}
 }
 .connect-button:hover{
-	background-color: #650300;
+	background-color: $secondary;
 }
+ @include mobile{
+	.fs-1{
+		font-size: 16px;
+	}
+ }
