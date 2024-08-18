@@ -1,0 +1,92 @@
+.store{
+    padding-top: 96px;
+    padding-bottom: 80px;
+}
+
+.store-title {
+    border-left: 8px solid $primary;
+    font-size: 48px;
+    font-weight: bold;
+    padding-left: 16px;
+    margin-bottom: 32px;
+  }
+
+.store-search{
+    width: 33.33333%;
+    display: flex;
+    margin-bottom: 40px;
+    @include pad{
+        width: 50%;
+    }
+}
+.store-choose{
+    font-size: 24px;
+    margin-right: 16px;
+}
+.store-search-select{
+    font-size: 18px;
+    border-radius: 0px;
+    border: #ced4da 1px solid;
+    color: #495057;
+    padding: 6px 12px;
+    flex-grow: 1;
+    appearance: none;
+    position: relative;
+    background: url(https://hexschool.github.io/2024-web-layout-training-code/week4/dist/assets/select-arrow-dcab13aa.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.store-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    row-gap: 48px;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include pad{
+        gap: 24px;
+    }
+}
+.store-item{
+    width: calc(33.3333% - 16px);
+    @include pad{
+        width: calc(50% - 12px);
+    }
+    @include mobile{
+        width: 100%;
+    }
+}
+.store-btn{
+    background: #000;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 19px;
+}
+
+.card-title{
+    font-size: 24px;
+    border-bottom: solid 1px #00000020;
+    padding: 8px 24px;
+}
+
+.card{
+    border: solid 1px #00000020;
+}
+
+.card-infor{
+    padding: 16px 24px;
+    font-size: 20px;
+}
+.card-infor li{
+    display: flex;
+    align-items: flex-start;
+}
+.card-infor .material-symbols-outlined{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
